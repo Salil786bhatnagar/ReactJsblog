@@ -1,0 +1,113 @@
+/* p.Updatedata {
+    position: relative;
+    bottom: 144px;
+    left: 26%;
+} */
+
+.main-div ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+  }
+  .main-div ul li a {
+    color: #fff;
+    border: 1px solid burlywood;
+    margin: 0px 30px;
+    padding: 11px 12px 12px 12px;
+    background-color: black;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px black;
+  }
+  .main-div ul li a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .h6-html {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .h6-css {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .h6-js {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .h6-boot {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+ .h6-reactjs {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .h6-nodejs {
+    text-align: justify;
+    text-justify: inter-word;
+  } 
+  .span-top {
+    position: relative;
+    bottom: 50px;
+    left: 40%;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    background: black;
+  }
+  .span-top a {
+    color: aliceblue;
+    text-decoration: aliceblue;
+  }
+
+  .div-header {
+    background: cornflowerblue;
+    padding: 26px 0px 26px 0px;
+    margin: 3px;
+  }
+
+  .div-footer {
+    background: cornflowerblue;
+    padding: 26px 0px 26px 0px;
+    margin: 3px;
+  }
+/* form validation css*/
+  .formerror {
+    color: red;
+  }
+  #name {
+    padding: 5px 0px 10px 0px;
+  }
+  #phone{
+    padding: 5px 0px 10px 0px;
+  }  
+
+  #email{
+    padding: 5px 0px 10px 0px;
+  }
+
+  #pass{
+    padding: 5px 25px 10px 0px;
+  }
+
+  #cpass{
+    padding: 5px 82px 10px 0px;
+  }
+
+  #submit {
+    padding: 12px 61px 0px 0px;
+  }
+
+  .btn-Left {
+    position: relative;
+    right: 3%;
+  }
+
+  .btn-right {
+    position: relative;
+    left: 4%;
+    bottom: 45px;
+  }
