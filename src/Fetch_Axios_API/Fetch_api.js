@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import { FirstName } from '../Component/ContextApiDemo';
+import { FirstName } from '../Components/ContextApiDemo';
 export default function Getmethod() {
        
     const [getData, setData] = useState([]);
@@ -22,7 +22,7 @@ export default function Getmethod() {
            (fname)=> {return <h1>My name is {fname} </h1>}
          }
         {/* {value => <div>The answer is {value}.</div>} */}
-        </FirstName.Consumer>
+        </FirstName.Consumer> 
     </div>
      <table border="1">
          <tr>

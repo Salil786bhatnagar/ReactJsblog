@@ -1,11 +1,12 @@
 import './App.css';
 import './Custom.css';
+import './style.css';
 import axios from 'axios';
-import Countdata from './Component/Count'
-import Sum from './Component/Sum'
+import Countdata from './Components/Count'
+import Sum from './Components/Sum'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // parent to child and child to parent 
-import Countprops_result from './Component/Countprops_result';
+import Countprops_result from './Components/Countprops_result';
 // Axios fetch dynamic data process\
 import DynamicefetchData from './AxiosFetchDataDynamice/Dynamicfetchdata'
 // controlled and uncontrolled component
@@ -15,9 +16,9 @@ import Usergetmethod from './DataGet_Post_Put_Delete/UserGetmethod'
 //dynamic post data react js
 import UserPostmethod from './DataGet_Post_Put_Delete/UserPostmethod';
 // current location in folder using react.js
-import CurrentLocation from './Component/UseLocation';
+import CurrentLocation from './Components/UseLocation';
 // current date and time in react.js
-import CurrentDateTime from './Component/CurrentDateTime'
+import CurrentDateTime from './Components/CurrentDateTime'
 // use to promis and await in react.js
 import Promissmethod from './Promis_await/Promisprocess';
 // use to pure component in using react.js
@@ -30,13 +31,13 @@ import AxiosApi from './Fetch_Axios_API/Axios_api'
 import LinkMenu from './Link_Contain/LinkMenu';
 import Promisprocess from './Promis_await/Promisprocess';
 // useState update name
-import UseStateUpdateName from './Component/UseState_UpdateName'
+import UseStateUpdateName from './Components/UseState_UpdateName'
 
 // use toggle in react.js
-import ToggleData from './Component/ToggleData';
+import ToggleData from './Components/ToggleData';
 
 import MapFunction from './Map_Function/Testnested_page'
-import ContextApiDemo from './Component/ContextApiDemo';
+import ContextApiDemo from './Components/ContextApiDemo';
 import Validationpage from './ValidationForm/Validationpage';
 import ValidationHook from './ValidationForm/ValidationHookForm'
 import ParentPage from './Props_State/ParentPage';
@@ -46,6 +47,14 @@ import UseCallbackPage from './UseCallback/UseCallbackPage';
 // useReducer
 
 import useReducerPage from './useReducer/useReducerPage';
+
+import ExpotPdfData from './Export_PDF_Data/ExportPdfDataPage'
+import DisplayPDF from './Export_PDF_Data/DisplayPDF_FILE'
+import PaginationPage from './React_Pagination/PaginationPage'
+import PaginationSecondPage from './React_Pagination/PaginationsecondPage'
+import PaginationThirdPage from './React_Pagination/PaginationThirdPage'
+//import PaginationFourthPage from './Components/React_Pagination/PaginationFourthPage'
+
 
 function App(props) {
   return (
@@ -175,6 +184,54 @@ function App(props) {
         strict
         history={props.history}
       />
+
+       <Route
+        path='/ExpotPdfData'
+        component={ExpotPdfData}
+        exact
+        strict
+        history={props.history}
+      />
+       <Route
+        path='/DisplayPDF'
+        component={DisplayPDF}
+        exact
+        strict
+        history={props.history}
+      />
+
+      <Route
+        path='/PaginationPage'
+        component={PaginationPage}
+        exact
+        strict
+        history={props.history}
+      />
+
+    <Route
+        path='/PaginationSecondPage'
+        component={PaginationSecondPage}
+        exact
+        strict
+        history={props.history}
+      />
+
+      <Route
+        path='/PaginationThirdPage'
+        component={PaginationThirdPage}
+        exact
+        strict
+        history={props.history}
+      /> 
+      
+      {/* <Route
+        path='/PaginationFourthPage'
+        component={PaginationFourthPage
+}
+        exact
+        strict
+        history={props.history}
+      /> */}
 
      </Router>
     </div>
