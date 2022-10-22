@@ -1,3 +1,4 @@
+import React,{Profiler} from 'react';
 import './App.css';
 import './Custom.css';
 import './style.css';
@@ -8,7 +9,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 // parent to child and child to parent 
 import Countprops_result from './Components/Countprops_result';
 // Axios fetch dynamic data process\
-import DynamicefetchData from './AxiosFetchDataDynamice/Dynamicfetchdata'
+// import DynamicefetchData from './AxiosFetchDataDynamice/Dynamicfetchdata'
 // controlled and uncontrolled component
 import ContrlledUncontrolled from './Controlled_Uncontrolled_Component/Controlled'
 //dynamic data get, put, post and delete in react js
@@ -55,8 +56,30 @@ import PaginationSecondPage from './React_Pagination/PaginationsecondPage'
 import PaginationThirdPage from './React_Pagination/PaginationThirdPage'
 //import PaginationFourthPage from './Components/React_Pagination/PaginationFourthPage'
 
+import SignIn from './ValidationForm/Signinform';
+import Digitalclock_page from './DigitalClock.js/Digitalclock_page';
+import Childapp from './Childapp';
+import { Audio } from './Audio_And_Video/Audio';
+import { Video } from './Audio_And_Video/Video';
+import PortalsPage from './Portals/PortalsPage';
+import MainContainer from './ContextApi_Folder/MainContainer';
 
 function App(props) {
+
+  const callbackFun=(
+        id,
+        phase,
+        actualDuration, 
+        baseDuration, 
+        startTime, 
+        commitTime, 
+        interactions )=>{
+      console.log( id,phase,actualDuration,baseDuration,startTime,commitTime,interactions)
+  }
+
+  
+
+
   return (
     <div className="App">
      {/* <Countdata/> */}
@@ -70,12 +93,59 @@ function App(props) {
      {/* <CurrentDateTime/> */}
      {/* <Promissmethod/> */}
      {/* <Pure_component/> */}
+
+     
      <Router>
+    
+     <Route
+         path="/MainContainer"
+         component={MainContainer}
+         exact
+         strict
+       />
+   
+     <Route
+         path="/PortalsPage"
+         component={PortalsPage}
+         exact
+         strict
+       />
+
+     <Route
+         path="/Video"
+         component={Video}
+         exact
+         strict
+       />
+
+     <Route
+         path="/Audio"
+         component={Audio}
+         exact
+         strict
+       />
+
+     <Route
+         path="/Childapp"
+         component={Childapp}
+         exact
+         strict
+       />
+
+      <Route
+         path="/UserPostmethod"
+         component={UserPostmethod}
+         exact
+         strict
+         history={props.history}
+       />
+
        <Route
          path="/Pure_component"
          component={Pure_component}
          exact
          strict
+         history={props.history}
        />
       <Route
          path="/FetchApi"
@@ -232,6 +302,26 @@ function App(props) {
         strict
         history={props.history}
       /> */}
+
+      {/* graph chart */}
+
+      <Route
+        path='/SignIn'
+        component={SignIn}
+        exact
+        strict
+        history={props.history}
+      />
+       {/* React.js Profiler */}
+      <Profiler id="customHook" onRender={callbackFun}> 
+        <Route
+          path='/Digitalclock_page'
+          component={Digitalclock_page}
+          exact
+          strict
+          history={props.history}
+        /> 
+      </Profiler>
 
      </Router>
     </div>

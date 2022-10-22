@@ -163,4 +163,25 @@
    /* end code */
 
 
+   span.span-inputfield {
+    position: relative;
+    right: 75%;
+}
+span.showImage {
+  position: relative;
+  top: 20px;
+}
+input.inputClass {
+  padding: 20px 60px 20px 60px;
+  margin: 10px;
+  width: 90%;
+}
+
+.MuiFormControl-fullWidth {
+  width: 100%;
+  position: relative;
+  left: 73%;
+}
+
+
 
