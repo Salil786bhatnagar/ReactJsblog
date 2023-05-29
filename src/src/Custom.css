@@ -1,0 +1,256 @@
+/* p.Updatedata {
+    position: relative;
+    bottom: 144px;
+    left: 26%;
+} */
+
+.main-div ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+  }
+  .main-div ul li a {
+    color: #fff;
+    border: 1px solid burlywood;
+    margin: 0px 30px;
+    padding: 11px 12px 12px 12px;
+    background-color: black;
+    text-decoration: none;
+    box-shadow: 4px 4px 4px black;
+  }
+  .main-div ul li a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  .h6-html {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .h6-css {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .h6-js {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .h6-boot {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+ .h6-reactjs {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .h6-nodejs {
+    text-align: justify;
+    text-justify: inter-word;
+  } 
+  .span-top {
+    position: relative;
+    bottom: 50px;
+    left: 40%;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    background: black;
+  }
+  .span-top a {
+    color: aliceblue;
+    text-decoration: aliceblue;
+  }
+
+  .div-header {
+    background: cornflowerblue;
+    padding: 26px 0px 26px 0px;
+    margin: 3px;
+  }
+
+  .div-footer {
+    background: cornflowerblue;
+    padding: 26px 0px 26px 0px;
+    margin: 3px;
+  }
+/* form validation css*/
+  .formerror {
+    color: red;
+  }
+  #name {
+    padding: 5px 0px 10px 0px;
+  }
+  #phone{
+    padding: 5px 0px 10px 0px;
+  }  
+
+  #email{
+    padding: 5px 0px 10px 0px;
+  }
+
+  #pass{
+    padding: 5px 25px 10px 0px;
+  }
+
+  #cpass{
+    padding: 5px 82px 10px 0px;
+  }
+
+  #submit {
+    padding: 12px 61px 0px 0px;
+  }
+
+  .btn-Left {
+    position: relative;
+    right: 3%;
+  }
+
+  .btn-right {
+    position: relative;
+    left: 4%;
+    bottom: 45px;
+  }
+
+  /* pdf filbook add css start*/
+   .div-html-filpbook{
+    position: absolute;
+    /* bottom: 0%; */
+    left: 25%;
+   }
+  /* end css */
+
+  /* add css in pagination start code */
+
+  .main-app {
+    margin: 2% 10%;
+    border: 1px ridge #464141;
+    padding: 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #464141;
+   }
+    
+   .container {
+    border-bottom: #fff 2px ridge;
+   }
+    
+   .pagination {
+    margin-top: 45px;
+    margin-left: -40px;
+    display: flex;
+    list-style: none;
+    outline: none;
+   }
+    
+   .pagination>.active>a {
+    background-color: #47ccde;
+    color: #fff;
+   }
+    
+   .pagination>li>a {
+    border: 1px solid #47ccde;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+   }
+    
+   .pagination>li>a, .pagination>li>span {
+    color: #47ccde;
+    background-color: azure;
+   }
+
+   /* end code */
+
+
+   span.span-inputfield {
+    position: relative;
+    right: 75%;
+}
+span.showImage {
+  position: relative;
+  top: 20px;
+}
+input.inputClass {
+  padding: 20px 60px 20px 60px;
+  margin: 10px;
+  width: 90%;
+}
+
+.MuiFormControl-fullWidth {
+  width: 100%;
+  position: relative;
+  left: 73%;
+}
+
+
+
+/* add custom css data table css start */
+
+.mui-datatables-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+  display: none;
+}
+
+button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.tss-52j81d-MUIDataTableSearch-clearIcon.mui-datatables-78trlr-MuiButtonBase-root-MuiIconButton-root {
+  left: 70%;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.tss-1h5wt30-MUIDataTableSearch-searchIcon.mui-datatables-i4bv87-MuiSvgIcon-root {
+  position: relative;
+  left: 78%;
+}
+h6.h6-table-heading {
+  position: relative;
+  right: 43%;
+  top: 75px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Rubik', sans-serif;
+}
+
+button.btn-del {
+  box-shadow: 2px 3px 1px;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+
+button.btn-edi {
+  box-shadow: 2px 3px 1px;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+}
+
+/* loading css start */
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+/* end loading css */

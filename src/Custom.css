@@ -183,5 +183,31 @@ input.inputClass {
   left: 73%;
 }
 
+/* add cart css */
+
+.div_cart_container {
+  display: -webkit-inline-box;
+  padding: 0px 10px 20px 10px;
+}
+
+.btn_cart {
+  position: relative;
+  right: 195%;
+  top: 99%;
+  background: burlywood;
+  color: crimson;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.div_header_cart {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.div_cart_container {
+  display: -webkit-inline-box;
+  padding: 42px 0px 0px 0px;
+}
 
 

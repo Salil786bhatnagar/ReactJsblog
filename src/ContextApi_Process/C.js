@@ -1,9 +1,9 @@
 import React from 'react'
-
-export default function ContextAPI_page() {
+import D from './D'
+export default function C() {
   return (
     <div>
-        
+      <D />
     </div>
   )
 }

@@ -24,19 +24,25 @@ import CurrentDateTime from './Components/CurrentDateTime'
 import Promissmethod from './Promis_await/Promisprocess';
 // use to pure component in using react.js
 import Pure_component from './UseMemo_and_Pure_Component/Use_pure_component';
+
 // fetch api and axio api call
 import FetchApi from './Fetch_Axios_API/Fetch_api'
 import AxiosApi from './Fetch_Axios_API/Axios_api'
 
+// use to useEffect Process 
+import UseEffectData from './UseEffect_Process/UseEffectData'; 
+
+// use to useContext API
+import ContextApi from './ContextApi_Process/A';
+
 // use to link a page
 import LinkMenu from './Link_Contain/LinkMenu';
+
 import Promisprocess from './Promis_await/Promisprocess';
 // useState update name
 import UseStateUpdateName from './Components/UseState_UpdateName'
 
 // use toggle in react.js
-import ToggleData from './Components/ToggleData';
-
 import MapFunction from './Map_Function/Testnested_page'
 import ContextApiDemo from './Components/ContextApiDemo';
 import Validationpage from './ValidationForm/Validationpage';
@@ -45,8 +51,9 @@ import ParentPage from './Props_State/ParentPage';
 import ChieldPage from './Props_State/ChieldPage';
 import Use_Location from './Use_Location/UseLocationPage';
 import UseCallbackPage from './UseCallback/UseCallbackPage';
+import UseRef_Component from './UseRef_component/Ref_component';
+import UseAwait from './Promis_await/AwaitData';
 // useReducer
-
 import useReducerPage from './useReducer/useReducerPage';
 
 import ExpotPdfData from './Export_PDF_Data/ExportPdfDataPage'
@@ -64,6 +71,42 @@ import { Video } from './Audio_And_Video/Video';
 import PortalsPage from './Portals/PortalsPage';
 import MainContainer from './ContextApi_Folder/MainContainer';
 
+// Dynamic Routing
+import Routingpage from './DynamiceRouting/Routingpage';
+import Userdatapage from './DynamiceRouting/Userdatapage';
+
+// using hooks 
+import UsingHooksData from './UsingHooks/Using_HooksData';
+
+import Hide_show from './Components/Hide_show';
+
+import Inputbox_getvalue from './Components/Inputbox_getvalue';
+
+import ToggleData from './Components/ToggleData';
+
+// redux counter value
+import CounterReduxData from './ReduxDataCounter';
+
+// reduc add to cart 
+import ReduxData_AddCart from './ReduxData_AddCart';
+
+import ReactuseEffect from './ReactUseEffect_MountinProcess.js/ReactuseEffect';
+
+import Ajax_Fetch_Axios_Api from './Fetch_Axios_API/Ajax_Fetch_Axios_Api/Ajax_fetchApi'
+
+import Use_ImperativeHandleProcess from './Use_ImperativeHandleProcess/Parent'
+
+import UseCustumHooks_Data from './src/UseCustumHooks/UseCustumHooks_Data';
+
+import UseStateData from './src/UseState_Hide_Show_Toggle/UseStateData';
+
+import Ajax_FetchApi_Simple from './Fetch_Axios_API/Ajax_Fetch_Axios_Api/Ajax_FetchApi_Simple';
+
+import User from './ReuseComponent/User';
+
+// reactjs Timer start push and stop
+import ReactCounterStartPushStop from './ReactTimerStartPushStop'
+
 function App(props) {
 
   const callbackFun=(
@@ -76,9 +119,6 @@ function App(props) {
         interactions )=>{
       console.log( id,phase,actualDuration,baseDuration,startTime,commitTime,interactions)
   }
-
-  
-
 
   return (
     <div className="App">
@@ -94,9 +134,155 @@ function App(props) {
      {/* <Promissmethod/> */}
      {/* <Pure_component/> */}
 
-     
      <Router>
+   
+     <Route
+         path="/ReactCounterStartPushStop"
+         component={ReactCounterStartPushStop}
+         exact
+         strict
+       />
+
+     <Route
+         path="/User"
+         component={User}
+         exact
+         strict
+       />
+
+     <Route
+         path="/Ajax_FetchApi_Simple"
+         component={Ajax_FetchApi_Simple}
+         exact
+         strict
+       />
+
+     <Route
+         path="/UseStateData"
+         component={UseStateData}
+         exact
+         strict
+       />
+
+     <Route
+         path="/UseCustumHooks_Data"
+         component={UseCustumHooks_Data}
+         exact
+         strict
+       />
+
+     <Route
+         path="/Use_ImperativeHandleProcess"
+         component={Use_ImperativeHandleProcess}
+         exact
+         strict
+       />
+
+     <Route
+         path="/Ajax_Fetch_Axios_Api"
+         component={Ajax_Fetch_Axios_Api}
+         exact
+         strict
+       />
     
+     <Route
+         path="/ReactuseEffect"
+         component={ReactuseEffect}
+         exact
+         strict
+       />
+
+     <Route
+         path="/ReduxData_AddCart"
+         component={ReduxData_AddCart}
+         exact
+         strict
+       />
+     
+     <Route
+         path="/CounterReduxData"
+         component={CounterReduxData}
+         exact
+         strict
+       />
+
+     <Route
+         path="/CurrentLocation"
+         component={CurrentLocation}
+         exact
+         strict
+       />
+
+     <Route
+         path="/ToggleData"
+         component={ToggleData}
+         exact
+         strict
+       />
+
+      <Route
+         path="/Inputbox_getvalue"
+         component={Inputbox_getvalue}
+         exact
+         strict
+       />
+
+     <Route
+         path="/Hide_show"
+         component={ Hide_show}
+         exact
+         strict
+       />
+
+     <Route
+         path="/UseEffectData"
+         component={ UseEffectData}
+         exact
+         strict
+       />
+
+     <Route
+         path="/ContextApi"
+         component={ContextApi}
+         exact
+         strict
+       />
+     
+     <Route
+         path="/UseAwait"
+         component={UseAwait}
+         exact
+         strict
+       />
+
+     <Route
+         path="/UsingHooksData"
+         component={UsingHooksData}
+         exact
+         strict
+       />
+
+     <Route
+         path="/UseRef_Component"
+         component={UseRef_Component}
+         exact
+         strict
+       />
+
+     <Route
+         path="/Userdatapage/:id/:name/:lname/:contact/:email"
+         component={Userdatapage}
+         exact
+         strict
+       />
+
+     <Route
+         path="/Routingpage"
+         component={Routingpage}
+         exact
+         strict
+       />
+
      <Route
          path="/MainContainer"
          component={MainContainer}
@@ -175,14 +361,7 @@ function App(props) {
         component={UseStateUpdateName}
         history={props.history}
       /> 
-      <Route
-        path='/ToggleData'
-        component={ToggleData}
-        exact
-        strict
-        history={props.history}
-      />
-
+   
       <Route
         path='/MapFunction'
         component={MapFunction}
